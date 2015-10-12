@@ -34,17 +34,20 @@ header {
 	font-size: medium;
 }
 
-span{
+.title{
 	font-size: 25px;
 }
 
-div.box{
+.listTitle{
+	font-size: 20px;
+}
+
+.box{
 	border:solid black 1px;
 	margin: auto;
 	margin-top: 25px;
 	width: 70%;
-	padding: 25px;
-	padding-right: 50px;
+	padding: 25px 40px 25px 40px;
 	background-color: white;
 	border-radius: 15px;
 
