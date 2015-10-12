@@ -1,5 +1,7 @@
 body{
 	font-family: sans-serif;
+	background-color: #EBF5FF;
+	margin: 0;
 }
 
 
@@ -7,8 +9,6 @@ header {
 	text-align: center;
 	font-size: 50px;
 	width: 75%;
-	border-bottom: solid;
-	border-color: #E8E8E8;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 2%;
@@ -24,19 +24,41 @@ header {
 }
 
 #main{
-	width: 60%;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 2%;
 	margin-bottom: 5%;
 }
 
+.subTitle{
+	font-size: medium;
+}
 
-b{
+span{
 	font-size: 25px;
+}
+
+div.box{
+	border:solid black 1px;
+	margin: auto;
+	margin-top: 25px;
+	width: 70%;
+	padding: 25px;
+	padding-right: 50px;
+	background-color: white;
+	border-radius: 15px;
 
 }
 
-#subTitle{
-	font-size: large;
+img{
+	margin-bottom: 25px;
+}
+table{
+	border: solid black 1px;
+	width: 75%;
+}
+
+tr, td{
+	border: solid black 1px;
+	padding: 10px;
 }
