@@ -1,0 +1,84 @@
+
+body
+{
+	height: 100%;
+	width:100%;
+	margin:0px;
+	position: absolute;
+}
+
+.logo
+{
+	width:15%;
+	height:100px;
+	content:url('../images/Logo_visitNorway.png');
+	float: left;
+}
+
+.DropDown
+{
+	width: 85%;
+	height: 14.5%;
+	background-color: gray;
+	float: right;
+}
+
+.silverFrame_dropDown
+{
+	width:85%;
+	left: 11%;
+	content:url('../images/Silver_Frame.png');	
+}
+
+.backgroundImage
+{
+	width: 100%;
+	height: 650px;
+	background-color: black;
+}
+
+.content
+{
+	width: 65%;
+	height:500px;
+	background-color: white;
+	opacity: 0.3;
+	position: relative;
+	text-align: center;
+	position: absolute;
+	top: 150px;
+	left: 250px
+}
+
+.silverFrame
+{
+	width: 100%;
+	content:url('../images/Silver_Frame.png');
+}
+
+footer
+{
+	width: 100%;
+	height: 16%;
+	margin:0;
+	position: absolute;
+	background-color:#ff7018;
+}
+
+.footMenu
+{
+	margin:0;
+}
+
+.footMenu ul li
+{
+	list-style: none;
+	margin-bottom: 0.5%;
+}
+
+.footMenu ul li a
+{
+	text-decoration: none;
+	color: white;
+	text-shadow:2px 2px 2px black;
+}
