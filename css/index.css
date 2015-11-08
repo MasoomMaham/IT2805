@@ -11,20 +11,18 @@ body{
 	position: absolute;
 	height: 85%;
 	margin-top: 70px;
-	background-color: gray	;
 	width: 100%;
-	background-image: url(../Images/Bergen_by_night.jpg);
+	background-image: url(../Images/Bergen_brygge.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
 
 .content{
 	color: black;
-	height: 80%;
-	width: 70%;
+	height: 32%;
+	width: 32%;
 	margin: auto;
-	margin-top: 2%;
-	background-color: white;
+	margin-top: 15%;
 	background: rgba(255,255,255,0.3);
 }
 
@@ -32,7 +30,8 @@ body{
 {
 	text-align: center;
 	color: black;
-	font-size: 40px;
+	padding-top: 2%;
+	font-size: 30px;
 }
 
 .content p
@@ -41,6 +40,7 @@ body{
 	font-size: 20px;
 	margin-left: 2%;
 	margin-right: 2%;
+	text-align: center;
 
 }
 
@@ -63,7 +63,7 @@ footer{
 	left: 5%;
 	margin-top: 20%;
 	position: absolute;
-	opacity: 0.5;
+	opacity: 0.8;
 	cursor: pointer;
 
 }
@@ -72,6 +72,6 @@ footer{
 	right: 5%;
 	margin-top: 20%;
 	position: absolute;
-	opacity: 0.5;
+	opacity: 0.8;
   cursor: pointer;
 }
