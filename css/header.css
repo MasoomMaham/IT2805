@@ -1,0 +1,83 @@
+.banner{
+	top: 0;
+	width: 100%;
+	height: 70px;
+	background-color: #000;
+	position: absolute;
+  font-family: Sans-serif;
+}
+
+.logo{
+	top: 0;
+	left: 0;
+	position: absolute;
+	content:url(../Images/Logo_visitNorway.png);
+	height: 100px;
+  z-index: 10;
+}
+
+
+.dropdown{
+  background-color: black;
+	margin-left: 10%;
+	width: 85%;
+	top: 0;
+	position: absolute;
+}
+
+.dropdown ul {
+  text-align: left;
+  display: inline;
+  list-style: none;
+
+}
+.dropdown ul li {
+  padding-top: 25px;
+  font-size: 15pt;
+  display: inline-block;
+  position: relative;
+  width: 17%;
+  text-align: center;
+  height: 70px;
+  background: #000;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.dropdown ul li ul {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+.dropdown ul li ul li { 
+  border: solid 1px gray;
+  margin:0;
+  background: #000; 
+  display: block; 
+  color: #fff;
+  width:100%;
+  padding: 0px 20px 0px 20px;
+}
+.dropdown ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+.dropdown a{
+	text-decoration: none;
+	color: white;
+}
