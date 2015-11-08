@@ -59,3 +59,12 @@ footer{
   margin: auto;
 
 }
+
+form{
+	text-align: center;
+	margin-top: 5%;
+}
+
+#email, #comment, #submit{
+	margin-top: 2%;
+}
