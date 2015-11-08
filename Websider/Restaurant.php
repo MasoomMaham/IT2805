@@ -9,19 +9,18 @@
 		<header>
 			<?php include 'header.php'; ?>
 		</header>
-
 		<div class="backgroundImage">
-			<div class="content">
-				<h2> Restauranter </h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div id="knappene">
+				<button id="sortNa" type="button">Sort by name</button>
+				<button id="sortPr" type="button">Sort by price</button>
 			</div>
+	    <div id="rests"></div>
+	    <script src="../prosedyrer/showRestaurants.js"> </script>
+			<script>
+			initRestaurants();
+			showRestaurants();
+			</script>
 		</div>
-
 		<footer>
 			<?php include 'footer.php';  ?>
 		</footer>
