@@ -11,10 +11,10 @@ function Restaurant(headPic,picsPaths, inf, priLevel,spesialiteter,urel) {
 
 function initRestaurants() {
 //restst.push(new Restaurant(Headerpic, Deltaljepics, navn, pris);
-  restst.push(new Restaurant("Fylldata/0.jpg",["Fylldata/0_1.jpg","Fylldata/0_2.jpg","Fylldata/0_3.jpg"],"Fisketorget",7,"Sjømat"));
-  restst.push(new Restaurant("Fylldata/1.png",["Fylldata/1_1.jpg","Fylldata/1_2.jpg","Fylldata/1_3.jpg"],"1877",9));
-  restst.push(new Restaurant("Fylldata/2.jpg",["Fylldata/2-1.jpg","Fylldata/2-2.jpg","Fylldata/2-3.jpg"],"Horn of Africa",8,"Eksotisk mat"));
-  restst.push(new Restaurant("Fylldata/3.png",["Fylldata/3-1.jpg","Fylldata/3-2.jpg","Fylldata/3-3.jpg"],"Cornelius Sjømatrestaurant",7,"Sjømat"));
+  restst.push(new Restaurant("../Images/ResPic/0.jpg",["../Images/ResPic/0_1.jpg","../Images/ResPic/0_2.jpg","../Images/ResPic/0_3.jpg"],"Fisketorget",7,"Sjømat"));
+  restst.push(new Restaurant("../Images/ResPic/1.png",["../Images/ResPic/1_1.jpg","../Images/ResPic/1_2.jpg","../Images/ResPic/1_3.jpg"],"1877",9));
+  restst.push(new Restaurant("../Images/ResPic/2.jpg",["../Images/ResPic/2-1.jpg","../Images/ResPic/2-2.jpg","../Images/ResPic/2-3.jpg"],"Horn of Africa",8,"Eksotisk mat"));
+  restst.push(new Restaurant("../Images/ResPic/3.png",["../Images/ResPic/3-1.jpg","../Images/ResPic/3-2.jpg","../Images/ResPic/3-3.jpg"],"Cornelius Sjømatrestaurant",7,"Sjømat"));
 }
 //Generer HTML og legger den til på siden
 function showRestaurants() {
