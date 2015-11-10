@@ -7,11 +7,19 @@ body{
   position: absolute;
 }
 
+.silverFrame_dropDown
+{
+  width:85%;
+  left: 15%;
+  top: 10%;
+  position: absolute;
+  content:url('../Images/Silver_Frame.png');  
+}
+
 .backgroundImage{
   position: absolute;
   height: 85%;
   margin-top: 70px;
-  background-color: gray  ;
   width: 100%;
   background-image: url(../Images/Akvariet.jpg);
   background-repeat: no-repeat;
@@ -28,11 +36,12 @@ body{
   background: rgba(255,255,255,0.3);
 }
 
-.content h2
+.content h1
 {
   text-align: center;
   color: black;
   font-size: 40px;
+  padding-top: 4%;
 }
 
 .content p
@@ -42,6 +51,249 @@ body{
   margin-left: 2%;
   margin-right: 2%;
 
+}
+
+#akkvariet_logo
+{
+  width: 10%;
+  height: 7%;
+  margin-left: 5%;
+  margin-top: 2%;
+  float: left;
+  content: url(../Images/akvariet_logo.jpg);
+}
+
+#akkvariet
+{
+  float: left;
+  text-align: left;
+  margin-left: 2%;
+}
+
+#akkvariet_text
+{
+  width: 90%;
+  height: 20%;
+  margin-left: 5%;
+  margin-top: 10%;
+  font-size: 16px;
+  text-align: left;
+}
+
+#akkvariet_pic1
+{
+  width: 20%;
+  height: 22%;
+  left: 12%;
+  position: relative;
+  float: left;
+  content: url(../Images/Seler.jpg);
+}
+
+#akkvariet_pic2
+{
+  width: 20%;
+  height: 22%;
+  left: 15%;
+  float: left;
+  position: relative;
+  content: url(../Images/Haitunnel.jpg);
+}
+
+#akkvariet_pic3
+{
+  width: 20%;
+  height: 22%;
+  left: 19%;
+  float: left;
+  position: relative;
+  content: url(../Images/krokodiller.jpg);
+}
+
+#floibanen_logo
+{
+  width: 7%;
+  height: 8%;
+  margin-left: 4%;
+  margin-top: 10%;
+  position: absolute;
+  float: left;
+  top: 83%;
+  content: url(../Images/Floibanen_logo.jpg);
+}
+
+#floibanen_id
+{
+  position: relative;
+  left: 17%;
+  margin-top: 28%;
+}
+
+#floibanen_text
+{
+  width: 90%;
+  height: 30%;
+  margin-left: 7%;
+  font-size: 16px;
+  text-align: left;
+}
+
+#floibanen_pic1
+{
+  width: 30%;
+  height: 30%;
+  left: 7%;
+  position: relative;
+  float: left;
+  content: url(../Images/Floibanen1.jpg);
+}
+
+#floibanen_pic2
+{
+  width: 30%;
+  height: 30%;
+  left: 10%;
+  position: relative;
+  float: left;
+  content: url(../Images/Floibanen2.jpg);
+}
+
+#floibanen_pic3
+{
+  width: 30%;
+  height: 30%;
+  left: 14%;
+  position: relative;
+  content: url(../Images/Floibanen3.jpg);
+}
+
+#Haakonshallen_logo
+{
+  width: 10%;
+  height: 8%;
+  margin-top: 6%;
+  margin-left: 7%;
+  float: left;
+  position: relative;
+  content: url(../Images/Haakonshallen_logo.jpg);
+}
+
+#Haakonshallen_id
+{
+  position: relative;
+  left: 2%;
+  margin-top: 7%;
+}
+
+#Haakonshallen_text
+{
+  width: 90%;
+  height: 18%;
+  margin-left: 7%;
+  font-size: 16px;
+  text-align: left;
+  float: left;
+}
+
+#Haakonshallen_pic1
+{
+  width: 30%;
+  height: 30%;
+  left: 7%;
+  position: relative;
+  float: left;
+  content: url();
+}
+
+#Haakonshallen_pic2
+{
+  width: 30%;
+  height: 30%;
+  top: 65%;
+  left: 10%;
+  position: relative;
+  float: left;
+  content: url();
+}
+
+#Haakonshallen_pic3
+{
+  width: 30%;
+  height: 30%;
+  top: 65%;
+  left: 14%;
+  position: relative;
+  float: left;
+  content: url();
+}
+
+#Bryggen_logo
+{
+  width: 7%;
+  height: 8%;
+  margin-left: 4%;
+  margin-top: 2%;
+  position: absolute;
+  float: left;
+  top: 225%;
+  content: url();
+}
+
+#Bryggen_id
+{
+  position: relative;
+  float: left;
+  left: 19%;
+  top: 23%;
+}
+
+#Bryggen_text
+{
+  width: 90%;
+  height: 12%;
+  margin-left: 7%;
+  margin-top: 52%;
+  font-size: 16px;
+}
+
+#Bryggen_pic1
+{
+  width: 30%;
+  height: 30%;
+  left: 7%;
+  position: relative;
+  float: left;
+  content: url();
+}
+
+#Bryggen_pic2
+{
+  width: 30%;
+  height: 30%;
+  top: 65%;
+  left: 10%;
+  position: relative;
+  float: left;
+  content: url();
+}
+
+#Bryggen_pic3
+{
+  width: 30%;
+  height: 30%;
+  top: 65%;
+  left: 14%;
+  position: relative;
+  float: left;
+  content: url();
+}
+
+.silverFrame
+{
+  width: 100%;
+  top: 89%;
+  position: absolute;
+  content:url('../images/Silver_Frame.png');
 }
 
 footer{

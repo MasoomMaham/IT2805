@@ -9,7 +9,7 @@
 		<header>
 			<?php include 'header.php'; ?>
 		</header>
-
+		<div class="silverFrame_dropDown"></div>
 		<div class="backgroundImage">
 			<div class="content">
 				<h1> Om Bergen </h1>
@@ -87,7 +87,7 @@
 				men Landmarks tegninger til det nye Troldhaugen er oppbevart hos Bergen byarkiv </p>
 			</div>
 		</div>
-
+		<div class="silverFrame"></div>
 		<footer>
 			<?php include 'footer.php';  ?>
 		</footer>

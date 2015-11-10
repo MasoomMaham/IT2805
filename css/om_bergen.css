@@ -7,6 +7,15 @@ body{
 	position: absolute;
 }
 
+.silverFrame_dropDown
+{
+	width:85%;
+	left: 15%;
+	top: 10%;
+	position: absolute;
+	content:url('../Images/Silver_Frame.png');	
+}
+
 .backgroundImage{
 	position: absolute;
 	height: 85%;
@@ -48,6 +57,14 @@ body{
 	margin-left: 5%;
 	margin-right: 5%;
 
+}
+
+.silverFrame
+{
+	width: 100%;
+	top: 89%;
+	position: absolute;
+	content:url('../images/Silver_Frame.png');
 }
 
 footer{

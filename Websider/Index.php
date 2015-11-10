@@ -9,6 +9,7 @@
 		<header>
 			<?php include 'header.php'; ?>
 		</header>
+		<div class="silverFrame_dropDown"></div>
 		<div class="backgroundImage">
 			<img src="../Images/Image_arrow.png" id="leftArrow" alt="Arrow pointing to the left side">
 			<img src="../Images/Image_arrowRight.png" id="rightArrow" alt="Arrow pointing to the right side">
@@ -19,6 +20,7 @@
 				Håper du får en trivelig reise og en opplevelse for livet.</p>
 			</div>
 		</div>
+		<div class="silverFrame"></div>
 		<footer>
 			<?php include 'footer.php';  ?>
 		</footer>

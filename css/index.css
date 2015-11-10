@@ -7,6 +7,15 @@ body{
 	font-family: Verdana;
 }
 
+.silverFrame_dropDown
+{
+	width:85%;
+	left: 15%;
+	top: 10%;
+	position: absolute;
+	content:url('../Images/Silver_Frame.png');	
+}
+
 .backgroundImage{
 	position: absolute;
 	height: 85%;
@@ -74,4 +83,12 @@ footer{
 	position: absolute;
 	opacity: 0.8;
   cursor: pointer;
+}
+
+.silverFrame
+{
+	width: 100%;
+	top: 89%;
+	position: absolute;
+	content:url('../images/Silver_Frame.png');
 }
