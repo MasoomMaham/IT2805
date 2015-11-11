@@ -55,9 +55,13 @@ function htmlRes(restOb) {
     f.src = eg;
     f.style.width = '200px';
     f.style.height= '150px';
-    if(g==1){
+   if(g==1){
       f.style.width = '300px';
       f.style.height= '200px';
+      f.setAttribute("class", "imgto");
+    }
+    else{
+    	f.setAttribute("class", "imgen");
     }
     g=g+1;
     im.appendChild(f);
