@@ -9,7 +9,7 @@ body{
 
 .backgroundImage{
 	position: absolute;
-	height: 85%;
+	height: 80%;
 	margin-top: 70px;
 	background-color: gray	;
 	width: 100%;
@@ -22,10 +22,11 @@ body{
 	color: black;
 	height: 100%;
 	min-height: 630px;
+	min-width: 600px;
 	width: 80%;
 	margin: auto;
 	margin-top: 2%;
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 	background-color: white;
 	background: rgba(255,255,255,0.6);
 	padding: 10px;
@@ -44,6 +45,10 @@ body{
 	font-size: 20px;
 	margin-left: 2%;
 	margin-right: 2%;
+}
+.imga{
+	margin-left: 12%;
+	margin-right: 12%;
 }
 
 .imgen{
@@ -76,7 +81,6 @@ footer{
 }
 #rests{
 	overflow:auto;
-	margin: auto;
 	height: 100%;
 	min-height: 40%;
 }
