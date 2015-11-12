@@ -14,7 +14,7 @@
 			<div class="content">
 				<h1> Attraksjoner </h1>
 				<div id="akkvariet_logo"></div>
-				<h3 id="akkvariet"> Akkvariet: </h3>
+				<h3 id="akkvariet"> Akvariet: </h3>
 				<p id="akkvariet_text"> Da Akvariet ble stiftet ble man enige om noe som kalles en formålsparagraf. Formålsparagrafen sier hva Akvariet 
 					skal prøve å få til. Formålsparagrafen ble laget i 1960 og ser slik ut:
 					Akvariet har som målsetting å spre kunnskap om livet i havet ved å gi publikum en representativ 

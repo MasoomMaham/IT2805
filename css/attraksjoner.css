@@ -82,9 +82,9 @@ body{
 
 #akkvariet_pic1
 {
-  width: 20%;
-  height: 22%;
-  left: 12%;
+  width: 26%;
+  height: 30%;
+  left: 5%;
   position: relative;
   float: left;
   content: url(../Images/Seler.jpg);
@@ -92,9 +92,9 @@ body{
 
 #akkvariet_pic2
 {
-  width: 20%;
-  height: 22%;
-  left: 15%;
+  width: 26%;
+  height: 30%;
+  left: 10%;
   float: left;
   position: relative;
   content: url(../Images/Haitunnel.jpg);
@@ -102,10 +102,9 @@ body{
 
 #akkvariet_pic3
 {
-  width: 20%;
-  height: 22%;
-  left: 19%;
-  float: left;
+  width: 26%;
+  height: 30%;
+  left: 15%;
   position: relative;
   content: url(../Images/krokodiller.jpg);
 }
@@ -114,35 +113,34 @@ body{
 {
   width: 7%;
   height: 8%;
-  margin-left: 4%;
-  margin-top: 10%;
-  position: absolute;
+  top: 20%;
+  margin-left: 5%;
+  position: relative;
   float: left;
-  top: 83%;
   content: url(../Images/Floibanen_logo.jpg);
 }
 
 #floibanen_id
 {
   position: relative;
-  left: 17%;
-  margin-top: 28%;
+  left: 13%;
+  margin-top: 13%;
 }
 
 #floibanen_text
 {
   width: 90%;
   height: 30%;
-  margin-left: 7%;
+  margin-left: 5%;
   font-size: 16px;
   text-align: left;
 }
 
 #floibanen_pic1
 {
-  width: 30%;
+  width: 26%;
   height: 30%;
-  left: 7%;
+  left: 5%;
   position: relative;
   float: left;
   content: url(../Images/Floibanen1.jpg);
@@ -150,7 +148,7 @@ body{
 
 #floibanen_pic2
 {
-  width: 30%;
+  width: 26%;
   height: 30%;
   left: 10%;
   position: relative;
@@ -160,9 +158,9 @@ body{
 
 #floibanen_pic3
 {
-  width: 30%;
+  width: 26%;
   height: 30%;
-  left: 14%;
+  left: 15%;
   position: relative;
   content: url(../Images/Floibanen3.jpg);
 }
@@ -172,7 +170,7 @@ body{
   width: 10%;
   height: 8%;
   margin-top: 6%;
-  margin-left: 7%;
+  margin-left: 5%;
   float: left;
   position: relative;
   content: url(../Images/Haakonshallen_logo.jpg);
@@ -189,7 +187,7 @@ body{
 {
   width: 90%;
   height: 18%;
-  margin-left: 7%;
+  margin-left: 5%;
   font-size: 16px;
   text-align: left;
   float: left;
@@ -197,95 +195,94 @@ body{
 
 #Haakonshallen_pic1
 {
-  width: 30%;
+  width: 26%;
   height: 30%;
-  left: 7%;
+  left: 5%;
+  margin-top: 25%;
   position: relative;
   float: left;
-  content: url();
+  content: url(../Images/Håkonshallen.jpg);
 }
 
 #Haakonshallen_pic2
 {
-  width: 30%;
+  width: 26%;
   height: 30%;
-  top: 65%;
   left: 10%;
+  margin-top: 25%;
   position: relative;
   float: left;
-  content: url();
+  content: url(../Images/Haakonshallen_pic2.jpg);
 }
 
 #Haakonshallen_pic3
 {
-  width: 30%;
+  width: 26%;
   height: 30%;
-  top: 65%;
   left: 14%;
+  margin-top: 41%;
   position: relative;
-  float: left;
-  content: url();
+  content: url(../Images/Haakonshallen_pic3.jpg);
 }
 
 #Bryggen_logo
 {
-  width: 7%;
+  width: 10%;
   height: 8%;
-  margin-left: 4%;
-  margin-top: 2%;
-  position: absolute;
+  margin-top: 6%;
+  margin-left: 5%;
   float: left;
-  top: 225%;
+  position: relative;
   content: url();
 }
 
 #Bryggen_id
 {
   position: relative;
-  float: left;
-  left: 19%;
-  top: 23%;
+  margin-top: 5%;
 }
 
 #Bryggen_text
 {
   width: 90%;
   height: 12%;
-  margin-left: 7%;
-  margin-top: 52%;
+  margin-left: 5%;
+  margin-top:4%;
   font-size: 16px;
 }
 
 #Bryggen_pic1
 {
-  width: 30%;
+  width: 26%;
   height: 30%;
-  left: 7%;
+  left: 5%;
+  margin-top: 10%;
+  margin-bottom: 5%;
   position: relative;
   float: left;
-  content: url();
+  content: url(../Images/bergenBrygge.jpg);
 }
 
 #Bryggen_pic2
 {
-  width: 30%;
+  width: 26%;
   height: 30%;
-  top: 65%;
   left: 10%;
+  margin-top: 10%;
   position: relative;
   float: left;
-  content: url();
+  content: url(../Images/BergenBrygge_pic2.jpg);
 }
 
 #Bryggen_pic3
 {
-  width: 30%;
+  width: 26%;
   height: 30%;
-  top: 65%;
   left: 14%;
+  margin-top: 10%;
   position: relative;
   float: left;
-  content: url();
+  content: url(../Images/BergenBrygge_pic3.jpg);
 }
 
 .silverFrame
