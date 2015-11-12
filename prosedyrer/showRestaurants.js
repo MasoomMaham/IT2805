@@ -11,10 +11,10 @@ function Restaurant(headPic,picsPaths, inf, priLevel,spesialiteter,urel) {
 
 function initRestaurants() {
 //restst.push(new Restaurant(Headerpic, Deltaljepics, navn, pris);
-  restst.push(new Restaurant("../Images/ResPic/0.jpg",["../Images/ResPic/0_1.jpg","../Images/ResPic/0_2.jpg","../Images/ResPic/0_3.jpg"],"Fisketorget",7,"Sjømat"));
-  restst.push(new Restaurant("../Images/ResPic/1.png",["../Images/ResPic/1_1.jpg","../Images/ResPic/1_2.jpg","../Images/ResPic/1_3.jpg"],"1877",9));
-  restst.push(new Restaurant("../Images/ResPic/2.jpg",["../Images/ResPic/2-1.jpg","../Images/ResPic/2-2.jpg","../Images/ResPic/2-3.jpg"],"Horn of Africa",8,"Eksotisk mat"));
-  restst.push(new Restaurant("../Images/ResPic/3.png",["../Images/ResPic/3-1.jpg","../Images/ResPic/3-2.jpg","../Images/ResPic/3-3.jpg"],"Cornelius Sjømatrestaurant",7,"Sjømat"));
+  restst.push(new Restaurant("../Images/ResPic/0.jpg",["../Images/ResPic/0_1.jpg","../Images/ResPic/0_2.jpg","../Images/ResPic/0_3.jpg"],"Fisketorget",7,"Sjømat","https://www.bergen.kommune.no/aktuelt/tema/fisketorget"));
+  restst.push(new Restaurant("../Images/ResPic/1.png",["../Images/ResPic/1_1.jpg","../Images/ResPic/1_2.jpg","../Images/ResPic/1_3.jpg"],"1877",9,null,"http://www.restaurant1877.no"));
+  restst.push(new Restaurant("../Images/ResPic/2.jpg",["../Images/ResPic/2-1.jpg","../Images/ResPic/2-2.jpg","../Images/ResPic/2-3.jpg"],"Horn of Africa",8,"Eksotisk mat","http://www.bergensentrum.no/restauranter/2595_horn-of-africa-restaurant"));
+  restst.push(new Restaurant("../Images/ResPic/3.png",["../Images/ResPic/3-1.jpg","../Images/ResPic/3-2.jpg","../Images/ResPic/3-3.jpg"],"Cornelius Sjømatrestaurant",7,"Sjømat","http://corneliusrestaurant.no"));
 }
 //Generer HTML og legger den til på siden
 function showRestaurants() {
@@ -26,7 +26,7 @@ function showRestaurants() {
 }
 //Denne må endres hver gang objektet endres - da denne skal klone res-objektet.
 function clone(obj) {
-    return new Restaurant(obj.headPicP,obj.picPath,obj.infon,obj.priceLevel);
+    return new Restaurant(obj.headPicP,obj.picPath,obj.infon,obj.priceLevel,obj.spesialitet,obj.url);
 }
 //Lager all HTMLen for hvert restautrant-objekt
 function htmlRes(restOb) {
@@ -55,9 +55,13 @@ function htmlRes(restOb) {
     f.src = eg;
     f.style.width = '200px';
     f.style.height= '150px';
-    if(g==1){
+   if(g==1){
       f.style.width = '300px';
       f.style.height= '200px';
+      f.setAttribute("class", "imgto");
+    }
+    else{
+    	f.setAttribute("class", "imgen");
     }
     g=g+1;
     im.appendChild(f);
