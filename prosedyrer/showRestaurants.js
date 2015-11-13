@@ -34,6 +34,7 @@ function htmlRes(restOb) {
   a.src = restOb.headPicP;
   a.style.width = '200px';
   a.style.height= '150px';
+  a.setAttribute("class", "logon");
   var b = document.createElement("h2");
   b.appendChild(document.createTextNode(restOb.infon));
   var c = document.createElement("p");
