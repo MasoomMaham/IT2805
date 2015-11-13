@@ -38,17 +38,17 @@ function htmlRes(restOb) {
   a.setAttribute("class", "logon");
   var b = document.createElement("h2");
   b.appendChild(document.createTextNode(restOb.infon));
+  b.setAttribute("onclick","location.href='" + restOb.url + "';");
   var c = document.createElement("p");
-  c.appendChild(document.createTextNode("Prisklasse: "+restOb.priceLevel));
-  c.appendChild(document.createElement("BR"));
-  c.appendChild(document.createTextNode("Spesialitet: "+restOb.spesialitet));
-  c.appendChild(document.createElement("BR"));
   var cinfo = document.createElement("p");
   cinfo.setAttribute("class", "resInfo");
   cinfo.innerHTML = restOb.informasjon;
+  c.appendChild(cinfo);
+  c.appendChild(document.createTextNode("Prisklasse: "+restOb.priceLevel));
+  c.appendChild(document.createElement("BR"));
+  c.appendChild(document.createTextNode("Spesialitet: "+restOb.spesialitet));
   var d = document.createElement("DIV");
   d.setAttribute("class", "content");
-  d.setAttribute("onclick","location.href='" + restOb.url + "';");
   var g = 0;
   d.appendChild(b);
   d.appendChild(a);
@@ -72,8 +72,8 @@ function htmlRes(restOb) {
     g=g+1;
     im.appendChild(f);
   }
-  d.appendChild(cinfo);
   d.appendChild(im);
+  d.appendChild(document.createElement("BR"));
   return d
 }
 
