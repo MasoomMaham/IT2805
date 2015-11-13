@@ -9,7 +9,7 @@ body{
 
 .backgroundImage{
 	position: absolute;
-	height: 100%;
+	height: 85%;
 	margin-top: 70px;
 	width: 100%;
 	background-image: url(../Images/bergen_uteliv.jpg);
@@ -19,9 +19,10 @@ body{
 
 .content{
 	color: black;
-	height: 300%;
+	height: 85%;
 	width: 70%;
 	margin: auto;
+	overflow: auto;
 	margin-top: 2%;
 	background: rgba(255,255,255,0.3);
 }
@@ -34,16 +35,21 @@ body{
 	padding-top: 4%;
 }
 
-.content p, h3
+.content p
 {
-	color: black;
+  color: black;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+
 }
 
 #Jacob_logo
 {
 	width: 10%;
-	height: 3%;
+	height: 8%;
 	margin-left: 5%;
+  	margin-top: 2%;
 	float: left;
 	content: url(../Images/jacob_all_logo.jpg);
 }
@@ -67,134 +73,105 @@ body{
 
 #Jacob_Aall_pic1
 {
-	width: 20%;
-	height: 22%;
-	top: 58%;
-	left: 19%;
-	position: absolute;
+	width: 26%;
+  	height: 30%;
+	left: 5%;
+	float: left;
+	position: relative;
 	content: url(../Images/drink_jacob_aall.jpg);
 }
 
 #Jacob_Aall_pic2
 {
-	width: 20%;
-	height: 22%;
-	top: 58%;
-	left: 41%;
-	position: absolute;
+	width: 26%;
+  	height: 30%;
+	left: 10%;
+	float: left;
+	position: relative;
 	content: url(../Images/burger_jacob_aall.jpg);
 }
 
 #Jacob_Aall_pic3
 {
-	width: 20%;
-	height: 22%;
-	top: 58%;
-	left: 63%;
-	position: absolute;
+	width: 26%;
+ 	height: 30%;	
+	left: 15%;
+	position: relative;
 	content: url(../Images/jacob_aall_lokaler.jpg);
-}
-
-#Metro_content
-{
-	margin-top: -29%; 
-	width: 90%;
-	height:40%;
 }
 
 #Metro_logo
 {
 	width: 7%;
-	height: 8%;
-	margin-left: 4%;
-	margin-top: 2%;
-	position: absolute;
-	float: left;
-	top: 83%;
+  	height: 8%;
+  	top: 15%;
+  	margin-left: 5%;
+  	position: relative;
+  	float: left;
 	content: url(../Images/Metro_logo.jpg);
 }
 
 #Metro_id
 {
 	position: relative;
-	float: left;
-	left: 19%;
-	top: 5%;
+  	left: 13%;
+  	margin-top: 8%;
 }
 
 #Metro_text
 {
 	width: 90%;
 	height: 30%;
-	margin-left: 7%;
-	margin-top: 3%;
+	margin-left: 5%;
 	font-size: 16px;
 	text-align: left;
-	float: left;
-	margin-bottom: 0;
 }
 
 #Metro_pic1
 {
-	width: 30%;
-	height: 30%;
-	top: 55%;
-	left: 7%;
-	position: relative;
-	float: left;
-	margin-top: -12%;
+	width: 26%;
+  	height: 30%;
+	left: 5%;
+  	position: relative;
+  	float: left;
 	content: url(../Images/Metro_lokaler.jpg);
 }
 
 #Metro_pic2
 {
-	width: 30%;
-	height: 30%;
-	top: 60%;
+	width: 26%;
+  	height: 30%;
 	left: 10%;
-	margin-top: -12%;
-	position: relative;
-	float: left;
+  	position: relative;
+  	float: left;
 	content: url(../Images/Metro_bar.jpg);
 }
 
 #Metro_pic3
 {
-	width: 30%;
-	height: 30%;
-	top: 60%;
-	left: 14%;
-	margin-top: -12%;
-	position: relative;
-	float: left;
+	width: 26%;
+  	height: 30%;
+	left: 15%;
+  	position: relative;
 	content: url(../Images/Metro_musikk.jpg);
-}
-
-#Lysverket_content
-{
-	margin-top: -40%; 
-	width: 90%;
-	height:40%;
 }
 
 #Lysverket_logo
 {
 	width: 7%;
 	height: 8%;
-	margin-left: 4%;
-	margin-top: 2%;
-	position: absolute;
-	float: left;
-	top: 146%;
+	margin-top: 6%;
+  	margin-left: 5%;
+  	float: left;
+  	position: relative;
 	content: url(../Images/Lysverket_logo.jpg);
 }
 
 #Lysverket_id
 {
 	position: relative;
-	float: left;
-	left: 19%;
-	top: 5%;
+  	left: 2%;
+  	margin-top: 7%;
 }
 
 #Lysverket_text
@@ -202,19 +179,20 @@ body{
 	width: 90%;
 	height: 18%;
 	margin-left: 7%;
-	margin-top: 5%;
-	font-size: 16px;
-	text-align: left;
-	float: left;
+	margin-left: 5%;
+  	font-size: 16px;
+  	text-align: left;
+  	float: left;
 }
 
 #Lysverket_pic1
 {
 	width: 30%;
 	height: 30%;
-	left: 7%;
-	position: relative;
-	float: left;
+	left: 5%;
+	margin-top: 3%;
+  	position: relative;
+  	float: left;
 	content: url(../Images/Lysverket_lokaler.jpg);
 }
 
@@ -222,10 +200,10 @@ body{
 {
 	width: 30%;
 	height: 30%;
-	top: 65%;
 	left: 10%;
-	position: relative;
-	float: left;
+	margin-top: 3%;
+  	position: relative;
+  	float: left;
 	content: url(../Images/Lysverket_drinkMaking.jpg);
 }
 
@@ -233,56 +211,45 @@ body{
 {
 	width: 30%;
 	height: 30%;
-	top: 65%;
 	left: 14%;
-	position: relative;
-	float: left;
+	margin-top: 12%;
+  	position: relative;
 	content: url(../Images/Lysverket_mat.jpg);
-}
-
-#FjordFusion_content
-{
-	margin-top: -40%; 
-	width: 90%;
-	height:40%;
 }
 
 #FjordFusion_logo
 {
 	width: 7%;
 	height: 8%;
-	margin-left: 4%;
-	margin-top: 2%;
-	position: absolute;
-	float: left;
-	top: 225%;
+	margin-top: 10%;
+  	margin-left: 5%;
+  	float: left;
+  	position: relative;
 	content: url(../Images/FjordFusion_logo.jpg);
 }
 
 #FjordFusion_id
 {
 	position: relative;
-	float: left;
-	left: 19%;
-	top: 5%;
+  	margin-top: 10%;
 }
 
 #FjordFusion_text
 {
 	width: 90%;
 	height: 12%;
-	margin-left: 7%;
-	margin-top: 5%;
-	font-size: 16px;
-	text-align: left;
-	float: left;
+	margin-left: 5%;
+  	margin-top:4%;
+  	font-size: 16px;
 }
 
 #FjordFusion_pic1
 {
-	width: 30%;
+	width: 26%;
 	height: 30%;
-	left: 7%;
+	left: 5%;
+	margin-top: 3%;
+  	margin-bottom: 10%;
 	position: relative;
 	float: left;
 	content: url(../Images/FordFusion_res7.jpg);
@@ -290,37 +257,34 @@ body{
 
 #FjordFusion_pic2
 {
-	width: 30%;
+	width: 26%;
 	height: 30%;
-	top: 65%;
 	left: 10%;
-	position: relative;
-	float: left;
+	margin-top: 3%;
+  	position: relative;
+  	float: left;
 	content: url(../Images/FjordFusion_drinks.jpg);
 }
 
 #FjordFusion_pic3
 {
-	width: 30%;
+	width: 26%;
 	height: 30%;
-	top: 65%;
 	left: 14%;
-	position: relative;
-	float: left;
+  	margin-top: 3%;
+  	position: relative;
+  	float: left;
+  	margin-bottom: 5%;
 	content: url(../Images/FjordFusion_utsikt.jpg);
 }
 
-.content p
+footer
 {
-	font-size: 20px;
-}
-
-footer{
-	top:20%;
 	bottom: 0;
-	height: 10%;
-	width: 100%;
-	background-color:#ff7018;
+  	height: 10%;
+  	width: 100%;
+  	background-color:#ff7018;
+  	position: absolute;
 }
 
 #kart{

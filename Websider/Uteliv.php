@@ -9,7 +9,7 @@
 		<header>
 			<?php include 'header.php'; ?>
 		</header>
-
+		<div class="silverFrame_dropDown"></div>
 		<div class="backgroundImage">
 			<div class="content">
 				<h1> Uteliv </h1>
@@ -26,13 +26,10 @@
 				 Det er mye folk innom hele dagen, og vi har etter hvert etablert oss som et 
 				 av Bergens største og mest populære utesteder. 
 				 Vi har også en egen barnemeny for å mette små mager. </p>
-				<div id="Jacob_images">
 					<div id="Jacob_Aall_pic1"></div>
 					<div id="Jacob_Aall_pic2"></div>
 					<div id="Jacob_Aall_pic3"></div>
-				</div>
 
-				<div id="Metro_content">
 					<div id="Metro_logo"></div>
 					<h3 id="Metro_id"> Metro: </h3>
 					<p id="Metro_text">Metro nightclub er et utested med internasjonal eksklusiv standard plassert 
@@ -42,14 +39,10 @@
 					På Metro er vi stolt over å ha det beste personalet, og ikke minst det beste klientellet 
 					Bergen har å tilby. Våre resident DJs er blant de beste i Skandinavia, og er oppdatert 
 					på det nyeste innen de rette musikksjangerene.</p>
-					<div id="Metro_images">
 						<div id="Metro_pic1"></div>
 						<div id="Metro_pic2"></div>
 						<div id="Metro_pic3"></div>
-					</div>
-				</div>
 
-				<div id="Lysverket_content">
 					<div id="Lysverket_logo"></div>
 					<h3 id="Lysverket_id"> Lysverket: </h3>
 					<p id="Lysverket_text">Lysverket er en restaurant, bar og nattklubb etablert i 2013 på kunstmuseet 
@@ -59,29 +52,22 @@
 					men også kjøtt og rene grønnsaksretter står på menyen. Lysverket byr blant annet på de beste råvarene fra nærområdet 
 					såsom sjøkreps, hummer, kamskjell og østers i verdensklasse, og vi serverer både 4 og 7 retter i restauranten samt á 
 					la carte i barområdet. </p>
-					<div id="Lysverket_images">
 						<div id="Lysverket_pic1"></div>
 						<div id="Lysverket_pic2"></div>
 						<div id="Lysverket_pic3"></div>
-					</div>
-				</div>
 
-				<div id="FjordFusion_content">
 					<div id="FjordFusion_logo"></div>
 					<h3 id="FjordFusion_id"> Fjord Fusion: </h3>
 					<p id="FjordFusion_text">Fjord Fusion Restaurant og Bar ligger i 2 etg på Zachariasbryggen. 
 						Vi ligger i lokalene til tidligere Bryggekanten Restaurant og Sun Z Bar –  Vi serverer 
 						CONTEMPORARY SPANISH og JAPANESE CUISINE – med ny meny, kjøkkensjef og restaurantsjef ønsker 
 						vi deg velkommen til nyoppussede lokaler med Bergens desidert beste utsikt over Fisketorget og Vågen i Bergen </p>
-					<div id="FjordFusion_images">
 						<div id="FjordFusion_pic1"></div>
 						<div id="FjordFusion_pic2"></div>
 						<div id="FjordFusion_pic3"></div>
-					</div>
-				</div>
-
 			</div>
 		</div>
+		<div class="silverFrame"></div>
 		<footer>
 			<?php include 'footer.php';  ?>
 		</footer>

@@ -60,9 +60,7 @@
 						<div id="Bryggen_pic2"></div>
 						<div id="Bryggen_pic3"></div>
 				</div>
-
 			</div>
-		</div>
 		<div class="silverFrame"></div>
 		<footer>
 			<?php include 'footer.php';  ?>
