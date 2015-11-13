@@ -31,16 +31,14 @@ body{
 	padding: 10px;
 }
 
-.content:hover{
-	background-color: #87CEFA;
-	background: rgba(155,155,255,0.6);
-}
+
 
 .content h2
 {
 	text-align: center;
 	color: black;
 	font-size: 40px;
+	text-decoration: underline;
 }
 
 .content p
@@ -51,8 +49,8 @@ body{
 	margin-right: 2%;
 }
 .imga{
-	margin-left: 12%;
-	margin-right: 12%;
+	margin-left: 20%;
+	margin-right: 10%;
 }
 
 .imgen{
