@@ -1,20 +1,21 @@
 var restst = [];
 //Objekt
-function Restaurant(headPic,picsPaths, inf, priLevel,spesialiteter,urel) {
+function Restaurant(headPic,picsPaths, inf, priLevel,spesialiteter,urel,infom) {
   this.picPath = picsPaths;
   this.infon = inf;
   this.priceLevel = priLevel;
   this.headPicP = headPic;
   this.spesialitet = spesialiteter||"Like god på alt";
   this.url = urel||"/";
+  this.informasjon=infom||"";
 }
 
 function initRestaurants() {
 //restst.push(new Restaurant(Headerpic, Deltaljepics, navn, pris);
-  restst.push(new Restaurant("../Images/ResPic/0.jpg",["../Images/ResPic/0_1.jpg","../Images/ResPic/0_2.jpg","../Images/ResPic/0_3.jpg"],"Fisketorget",7,"Sjømat","https://www.bergen.kommune.no/aktuelt/tema/fisketorget"));
-  restst.push(new Restaurant("../Images/ResPic/1.png",["../Images/ResPic/1_1.jpg","../Images/ResPic/1_2.jpg","../Images/ResPic/1_3.jpg"],"1877",9,null,"http://www.restaurant1877.no"));
-  restst.push(new Restaurant("../Images/ResPic/2.jpg",["../Images/ResPic/2-1.jpg","../Images/ResPic/2-2.jpg","../Images/ResPic/2-3.jpg"],"Horn of Africa",8,"Eksotisk mat","http://www.bergensentrum.no/restauranter/2595_horn-of-africa-restaurant"));
-  restst.push(new Restaurant("../Images/ResPic/3.png",["../Images/ResPic/3-1.jpg","../Images/ResPic/3-2.jpg","../Images/ResPic/3-3.jpg"],"Cornelius Sjømatrestaurant",7,"Sjømat","http://corneliusrestaurant.no"));
+  restst.push(new Restaurant("../Images/ResPic/0.jpg",["../Images/ResPic/0_1.jpg","../Images/ResPic/0_2.jpg","../Images/ResPic/0_3.jpg"],"Fisketorget",7,"Sjømat","https://www.bergen.kommune.no/aktuelt/tema/fisketorget","Fisketorget skal tilby publikum en arena hvor det handles naturlige og ferske kvalitetsprodukter, med vekt på lokale varer og spesialiteter fra hav og landbruk. Fisketorget skal utelukkende fremstå som omsetningssted for fisk, sjømat og skalldyr, lokalprodusert gardsmat, frukt, bær, grønnsaker og blomster/planter. "));
+  restst.push(new Restaurant("../Images/ResPic/1.png",["../Images/ResPic/1_1.jpg","../Images/ResPic/1_2.jpg","../Images/ResPic/1_3.jpg"],"1877",9,null,"http://www.restaurant1877.no","Restaurant 1877 åpnet i Bergen i Januar 2013. Restauranten ligger i ærverdige Kjøttbasaren midt i hjertet av byen. Med en slik beliggenhet var det for oss helt naturlig å ta vare på de tradisjoner og mat kultur-verdier som Kjøttbasaren bærer med seg. Her serveres det mat og drikke med kjærlighet og kunnskap, hvor vi gjør vårt beste for å gi alle en unik opplevelse."));
+  restst.push(new Restaurant("../Images/ResPic/2.jpg",["../Images/ResPic/2-1.jpg","../Images/ResPic/2-2.jpg","../Images/ResPic/2-3.jpg"],"Horn of Africa",8,"Eksotisk mat","http://www.bergensentrum.no/restauranter/2595_horn-of-africa-restaurant","Welcome to our Ethiopian & Eritrean kitchen in Bergen. Horn of Africa restaurant is located in the beautiful city Bergen in Norway, at STRANDGATEN 212. Our little kitchen is good enough to prepare a very lovely vegetarian as well as Non-vegetarian dishes with delicious spices and rich flavor. Come and visit us in our modern but with a Eritrean and Ethiopian traditional touches here and there."));
+  restst.push(new Restaurant("../Images/ResPic/3.png",["../Images/ResPic/3-1.jpg","../Images/ResPic/3-2.jpg","../Images/ResPic/3-3.jpg"],"Cornelius Sjømatrestaurant",7,"Sjømat","http://corneliusrestaurant.no","Cornelius ble startet i 2003 av sjømatentusiastene Alf Roald Sætre og Odd Einar Tufteland. De to hadde en felles idé om å skape et restaurantkonsept med helt unike sjømatopplevelser. Tilbud som ingen andre hadde."));
 }
 //Generer HTML og legger den til på siden
 function showRestaurants() {
@@ -26,7 +27,7 @@ function showRestaurants() {
 }
 //Denne må endres hver gang objektet endres - da denne skal klone res-objektet.
 function clone(obj) {
-    return new Restaurant(obj.headPicP,obj.picPath,obj.infon,obj.priceLevel,obj.spesialitet,obj.url);
+    return new Restaurant(obj.headPicP,obj.picPath,obj.infon,obj.priceLevel,obj.spesialitet,obj.url,obj.informasjon);
 }
 //Lager all HTMLen for hvert restautrant-objekt
 function htmlRes(restOb) {
@@ -34,15 +35,20 @@ function htmlRes(restOb) {
   a.src = restOb.headPicP;
   a.style.width = '200px';
   a.style.height= '150px';
+  a.setAttribute("class", "logon");
   var b = document.createElement("h2");
   b.appendChild(document.createTextNode(restOb.infon));
+  b.setAttribute("onclick","location.href='" + restOb.url + "';");
   var c = document.createElement("p");
+  var cinfo = document.createElement("p");
+  cinfo.setAttribute("class", "resInfo");
+  cinfo.innerHTML = restOb.informasjon;
+  c.appendChild(cinfo);
   c.appendChild(document.createTextNode("Prisklasse: "+restOb.priceLevel));
   c.appendChild(document.createElement("BR"));
   c.appendChild(document.createTextNode("Spesialitet: "+restOb.spesialitet));
   var d = document.createElement("DIV");
   d.setAttribute("class", "content");
-  d.setAttribute("onclick","location.href='" + restOb.url + "';");
   var g = 0;
   d.appendChild(b);
   d.appendChild(a);
@@ -56,8 +62,8 @@ function htmlRes(restOb) {
     f.style.width = '200px';
     f.style.height= '150px';
    if(g==1){
-      f.style.width = '300px';
-      f.style.height= '200px';
+      f.style.width = '200px';
+      f.style.height= '150px';
       f.setAttribute("class", "imgto");
     }
     else{
@@ -67,6 +73,7 @@ function htmlRes(restOb) {
     im.appendChild(f);
   }
   d.appendChild(im);
+  d.appendChild(document.createElement("BR"));
   return d
 }
 

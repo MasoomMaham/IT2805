@@ -26,22 +26,19 @@ body{
 	width: 80%;
 	margin: auto;
 	margin-top: 2%;
-	margin-bottom: 100px;
 	background-color: white;
 	background: rgba(255,255,255,0.6);
 	padding: 10px;
 }
 
-.content:hover{
-	background-color: #87CEFA;
-	background: rgba(155,155,255,0.6);
-}
+
 
 .content h2
 {
 	text-align: center;
 	color: black;
 	font-size: 40px;
+	text-decoration: underline;
 }
 
 .content p
@@ -52,8 +49,8 @@ body{
 	margin-right: 2%;
 }
 .imga{
-	margin-left: 12%;
-	margin-right: 12%;
+	margin-left: 20%;
+	margin-right: 10%;
 }
 
 .imgen{
@@ -63,11 +60,20 @@ body{
 	max-width: 25%
 }
 
+.resInfo{
+	font-family: "Verdana";
+}
+
 .imgto{
 	margin-left: 10px;
 	margin-right: 10px;
-	max-height: 30%;
-	max-width: 35%
+	max-height: 20%;
+	max-width: 25%
+}
+
+.logon{
+	max-height: 10%;
+	max-width: 12%;
 }
 
 footer{
