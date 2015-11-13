@@ -28,10 +28,11 @@ body{
 
 .content{
   color: black;
-  height: 100%;
+  height: 90%;
   width: 70%;
   margin: auto;
   margin-top: 2%;
+  overflow: auto;
   background-color: white;
   background: rgba(255,255,255,0.3);
 }
@@ -113,7 +114,7 @@ body{
 {
   width: 7%;
   height: 8%;
-  top: 20%;
+  top: 22%;
   margin-left: 5%;
   position: relative;
   float: left;
@@ -220,7 +221,7 @@ body{
   width: 26%;
   height: 30%;
   left: 14%;
-  margin-top: 41%;
+  margin-top: 40%;
   position: relative;
   content: url(../Images/Haakonshallen_pic3.jpg);
 }
@@ -257,7 +258,7 @@ body{
   height: 30%;
   left: 5%;
   margin-top: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   position: relative;
   float: left;
   content: url(../Images/bergenBrygge.jpg);
@@ -282,6 +283,7 @@ body{
   margin-top: 10%;
   position: relative;
   float: left;
+  margin-bottom: 5%;
   content: url(../Images/BergenBrygge_pic3.jpg);
 }
 
