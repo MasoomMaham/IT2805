@@ -26,7 +26,6 @@ body{
 	width: 80%;
 	margin: auto;
 	margin-top: 2%;
-	margin-bottom: 100px;
 	background-color: white;
 	background: rgba(255,255,255,0.6);
 	padding: 10px;
@@ -63,11 +62,15 @@ body{
 	max-width: 25%
 }
 
+.resInfo{
+	font-family: "Verdana";
+}
+
 .imgto{
 	margin-left: 10px;
 	margin-right: 10px;
-	max-height: 30%;
-	max-width: 35%
+	max-height: 20%;
+	max-width: 25%
 }
 
 .logon{
