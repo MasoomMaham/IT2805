@@ -15,7 +15,7 @@
 				<button id="sortPr" type="button">Sort by price</button>
 			</div>
 	    <div id="rests"></div>
-	    <script src="../prosedyrer/showRestaurants.js"> </script>
+	    <script src="../prosedyrer/sortRestaurants.js"> </script>
 			<script>
 			initRestaurants();
 			showRestaurants();
