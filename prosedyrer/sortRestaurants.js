@@ -14,7 +14,7 @@ function Restaurant(headPic,picsPaths, inf, priLevel,spesialiteter,urel,infom) {
 function initRestaurants() {
 //restst.push(new Restaurant(Headerpic, Deltaljepics, navn, pris);
   restst.push(new Restaurant("../Images/ResPic/0.jpg",["../Images/ResPic/0_1.jpg","../Images/ResPic/0_2.jpg","../Images/ResPic/0_3.jpg"],"Fisketorget",7,"Sjømat","https://www.bergen.kommune.no/aktuelt/tema/fisketorget","Fisketorget skal tilby publikum en arena hvor det handles naturlige og ferske kvalitetsprodukter, med vekt på lokale varer og spesialiteter fra hav og landbruk. Fisketorget skal utelukkende fremstå som omsetningssted for fisk, sjømat og skalldyr, lokalprodusert gardsmat, frukt, bær, grønnsaker og blomster/planter. "));
-  restst.push(new Restaurant("../Images/ResPic/1.png",["../Images/ResPic/1_1.jpg","../Images/ResPic/1_2.jpg","../Images/ResPic/1_3.jpg"],"1877",9,null,"http://www.restaurant1877.no","Restaurant 1877 åpnet i Bergen i Januar 2013. Restauranten ligger i ærverdige Kjøttbasaren midt i hjertet av byen. Med en slik beliggenhet var det for oss helt naturlig å ta vare på de tradisjoner og mat kultur-verdier som Kjøttbasaren bærer med seg. Her serveres det mat og drikke med kjærlighet og kunnskap, hvor vi gjør vårt beste for å gi alle en unik opplevelse."));
+  restst.push(new Restaurant("../Images/ResPic/1.png",["../Images/ResPic/1_1.jpg","../Images/ResPic/1_2.jpg","../Images/ResPic/1_3.jpg"],"1877",9,"Storfe","http://www.restaurant1877.no","Restaurant 1877 åpnet i Bergen i Januar 2013. Restauranten ligger i ærverdige Kjøttbasaren midt i hjertet av byen. Med en slik beliggenhet var det for oss helt naturlig å ta vare på de tradisjoner og mat kultur-verdier som Kjøttbasaren bærer med seg. Her serveres det mat og drikke med kjærlighet og kunnskap, hvor vi gjør vårt beste for å gi alle en unik opplevelse."));
   restst.push(new Restaurant("../Images/ResPic/2.jpg",["../Images/ResPic/2-1.jpg","../Images/ResPic/2-2.jpg","../Images/ResPic/2-3.jpg"],"Horn of Africa",8,"Eksotisk mat","http://www.bergensentrum.no/restauranter/2595_horn-of-africa-restaurant","Welcome to our Ethiopian & Eritrean kitchen in Bergen. Horn of Africa restaurant is located in the beautiful city Bergen in Norway, at STRANDGATEN 212. Our little kitchen is good enough to prepare a very lovely vegetarian as well as Non-vegetarian dishes with delicious spices and rich flavor. Come and visit us in our modern but with a Eritrean and Ethiopian traditional touches here and there."));
   restst.push(new Restaurant("../Images/ResPic/3.png",["../Images/ResPic/3-1.jpg","../Images/ResPic/3-2.jpg","../Images/ResPic/3-3.jpg"],"Cornelius Sjømatrestaurant",7,"Sjømat","http://corneliusrestaurant.no","Cornelius ble startet i 2003 av sjømatentusiastene Alf Roald Sætre og Odd Einar Tufteland. De to hadde en felles idé om å skape et restaurantkonsept med helt unike sjømatopplevelser. Tilbud som ingen andre hadde."));
 }
@@ -82,12 +82,19 @@ function sortIt(sortingAtt) {
       lista[(i-n)+1] = clone(lista[i-n]);
       n = n+1;
     }
-  } else {
+  } if(sortingAtt==0) {
     while((i-n) > -1 && lista[i-n].infon > onHand.infon){
 		console.log(onHand);
 		lista[(i-n)+1] = clone(lista[i-n]);
 		n = n+1;
 	 }
+  }
+  if(sortingAtt==2){
+  	while((i-n) > -1 && lista[i-n].spesialitet > onHand.spesialitet){
+		console.log(onHand);
+		lista[(i-n)+1] = clone(lista[i-n]);
+		n = n+1;
+	 }	
   }
 	lista[i-(n-1)] = clone(onHand);
  }
@@ -98,3 +105,4 @@ function sortIt(sortingAtt) {
 //Lyttere til knappene
 document.getElementById('sortNa').addEventListener("click", function(){sortIt(0);});
 document.getElementById('sortPr').addEventListener("click", function(){sortIt(1);});
+document.getElementById('sortCa').addEventListener("click", function(){sortIt(2);});
