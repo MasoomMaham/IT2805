@@ -7,6 +7,15 @@ body{
 	position: absolute;
 }
 
+.silverFrame_dropDown
+{
+	width:88%;
+	left: 12%;
+	top: 10%;
+	position: absolute;
+	content:url('../Images/Silver_Frame.png');	
+}
+
 .backgroundImage{
 	position: absolute;
 	height: 85%;
@@ -209,10 +218,10 @@ body{
 
 #Lysverket_pic3
 {
-	width: 30%;
+	width: 26%;
 	height: 30%;
-	left: 14%;
-	margin-top: 12%;
+	left: 12%;
+	margin-top: 17%;
   	position: relative;
 	content: url(../Images/Lysverket_mat.jpg);
 }
@@ -231,6 +240,7 @@ body{
 #FjordFusion_id
 {
 	position: relative;
+	left: 2%;
   	margin-top: 10%;
 }
 
@@ -276,6 +286,14 @@ body{
   	float: left;
   	margin-bottom: 5%;
 	content: url(../Images/FjordFusion_utsikt.jpg);
+}
+
+.silverFrame
+{
+	width: 100%;
+	top: 89%;
+	position: absolute;
+	content:url('../images/Silver_Frame.png');
 }
 
 footer
