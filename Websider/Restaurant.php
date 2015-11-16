@@ -11,11 +11,12 @@
 		</header>
 		<div class="backgroundImage">
 			<div id="knappene">
-				<button id="sortNa" type="button">Sort by name</button>
-				<button id="sortPr" type="button">Sort by price</button>
+				<button id="sortNa" type="button">Sortér etter name</button>
+				<button id="sortPr" type="button">Sortér etter pris</button>
+				<button id="sortCa" type="button">Sortér etter kategori</button>
 			</div>
 	    <div id="rests"></div>
-	    <script src="../prosedyrer/showRestaurants.js"> </script>
+	    <script src="../prosedyrer/sortRestaurants.js"> </script>
 			<script>
 			initRestaurants();
 			showRestaurants();
