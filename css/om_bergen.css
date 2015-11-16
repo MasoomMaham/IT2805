@@ -9,8 +9,8 @@ body{
 
 .silverFrame_dropDown
 {
-	width:85%;
-	left: 15%;
+	width:88%;
+	left: 12%;
 	top: 10%;
 	position: absolute;
 	content:url('../Images/Silver_Frame.png');	
@@ -28,10 +28,11 @@ body{
 
 .content{
 	color: black;
-	height: 350%;
+	height: 85%;
 	width: 70%;
 	margin: auto;
 	margin-top: 2%;
+	overflow: auto;
 	background: rgba(255,255,255,0.3);
 }
 
