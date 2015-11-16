@@ -24,7 +24,15 @@ function showRestaurants() {
   var sidi = document.getElementById('rests');
   sidi.innerHTML="";
   for(var i = 0; i < restst.length; i++) {
-    sidi.appendChild(htmlRes(restst[i]));
+    var mid = htmlRes(restst[i]);
+    if(i==0){
+      var a = document.createElement("DIV");
+      var b = document.createElement("h1");
+      b.appendChild(document.createTextNode("Restaurant"));
+      a.appendChild(b);
+      mid.innerHTML = a.innerHTML + " " + mid.innerHTML;
+    }
+    sidi.appendChild(mid);
   }
 }
 //kloner res-objekt
@@ -38,10 +46,11 @@ function htmlRes(restOb) {
   a.src = restOb.headPicP;
   a.style.width = '200px';
   a.style.height= '150px';
-  a.setAttribute("class", "logon");
-  var b = document.createElement("h2");
+  a.setAttribute("class", "logon flyt");
+  var b = document.createElement("h3");
   b.appendChild(document.createTextNode(restOb.infon));
   b.setAttribute("onclick","location.href='" + restOb.url + "';");
+  b.setAttribute("class", "flyt");
   var c = document.createElement("p");
   var cinfo = document.createElement("p");
   cinfo.setAttribute("class", "resInfo");
@@ -52,8 +61,8 @@ function htmlRes(restOb) {
   c.appendChild(document.createTextNode("Spesialitet: "+restOb.spesialitet));
   var d = document.createElement("DIV");
   d.setAttribute("class", "content");
-  d.appendChild(b);
   d.appendChild(a);
+  d.appendChild(b);
   d.appendChild(c);
   var im = document.createElement("DIV");
   im.setAttribute("class", "imga");
@@ -61,8 +70,8 @@ function htmlRes(restOb) {
     var eg = restOb.picPath[e];
     var f = document.createElement("img");
     f.src = eg;
-    f.style.width = '200px';
-    f.style.height= '150px';
+    f.style.width = '300px';
+    f.style.height= '220px';
     f.setAttribute("class", "imgen");
     im.appendChild(f);
   }
@@ -94,7 +103,7 @@ function sortIt(sortingAtt) {
 		console.log(onHand);
 		lista[(i-n)+1] = clone(lista[i-n]);
 		n = n+1;
-	 }	
+	 }
   }
 	lista[i-(n-1)] = clone(onHand);
  }
