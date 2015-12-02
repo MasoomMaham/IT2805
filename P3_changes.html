@@ -7,14 +7,14 @@
 </head>
 <body>
 	<div id="header">
-		<header>P2 Design Guidelines</header>
+		<header>P3 Design Changes</header>
 	</div>
 	<div id ="main">
 		<div class="box" id="docDetails">
 			<span class="title">Dokument Detaljer:</span>
-			<p>P2 Prosjekt Design<br>
+			<p>P3 Design Changes<br>
 			Andreas N. Digernes, Masoom Maham, Peter H. Osnes & Simon Slyngstad<br>
-			IT2805 12.10.2015</p>
+			IT2805 16.11.2015</p>
 
 		</div>
 		<div class="box" id="adminDetails">
@@ -27,7 +27,34 @@
 		</div>
 		<div class="box" id="changes">
 			<span class="title">Endringer:</span>
-			
+<br><br>
+<p>Endret fra html til php</p>
+
+<br>
+<p>Endret strukturen til CSS styling-løsningen:<br>
+Istedenfor en felles css-fil ‘Style.css’ som vi opprinnelig hadde planlagt, endte vi med å lage egne css-filer for hver side. Dette fordi hver av sidene fikk så mange unike elementer. Derav er det nok en god del lik kode css-filene imellom.</p>
+<br>
+<p>Endret funksjon Kontakt_oss.php:<br>
+Som det kanskje kunne fremgå av designplanene, ville det være mulig å finne kontaktinformasjon under denne siden. Ettersom at vi ikke så noen økt gevinst, har vi kun gjort kontakt mulig gjennom kontaktskjemaet.</p>
+<br>
+<p>Endret bakgrunnsbilde for Kontakt_oss.php:<br>
+Vi hadde opprinnelig tenkt til å dekorere bakgrunnen med et bilde av nordlys, begrunnet i designplanen. Dette har vi gått bort ifra i det endelige produktet, da vi syntes at det brøt litt med resten av siden. Nordlys er jo ikke noen stor Bergen-appell. Bakgrunnsbildet er nå av Bryggen.</p>
+<br>
+<p>Endret contactUsForm.js:<br>
+Javascriptet validerer inputen, men sender det ikke noen plass. Dette ville vi gjort dersom systemet skulle benyttes reelt, men valgte å heller bruke ressurser andre steder.</p>
+<br>
+<p>Endret dropDown.js:<br>
+Denne ble det ikke noe av. Se punktet under.</p>
+<br>
+<p>Endring av sortRestaurants.js:<br>
+Ettersom at vi kom opp med bedre løsninger enn å bruke JS i drop down-menyen laget vi heller en annen kompenserende JS-funksjon. Den nye funksjonen er showRestaurants() og tilhørende metoder i sortRestaurants.js-filen. I den nye funksjonen kan vi istedenfor å endre Restaurant.php for å legge inn restauranter, heller legge det inn som et array i sortRestaurants.js. Innholdet i arrayet gjøres som om til Restaurant-objekter, som så gjøres om til HTML.</p>
+<br>
+<p>Endring av måten innholde vises på:<br>
+På sidene våre over Uteliv, Attraksjoner, om Bergen og Restauranter har vi valgt å bruke en scroll bar for å kontrollere innholde. Vi har valgt dette fordi bildene som vi benytter oss av scaler dårlig og for å beholde deres kvalitet har vi valgt å gjøre det på denne måten. Scroll -baren var også tenkt på i utgangspunktet men ble ikke tatt med i designutviklingen.</p>
+<br><br>
+Nettsiden vår ligger på Prosjekt/IT2805-WebTek/Websider/Index.php
+<br>
+og folk.ntnu.no/simonssl/prosjekt/websider/Index.php
 
 		</div>
 		<div class="box" id="plan">
@@ -51,7 +78,7 @@
 					<li>sortRestaurants.js</li>
 					<li>googleMap.js</li>
 					<li>contactUsForm.js</li>
-				</ul>	
+				</ul>
 				</li>
 				<li>
 				css/
@@ -68,9 +95,8 @@
 					<li>restaurant.css</li>
 					<li>sitemap.css</li>
 					<li>uteliv.css</li>
-				</ul>	
+				</ul>
 				</li>
-				<li>style.css</li>
 			</ul>
 
 			<span class="title"><p>Endelig arbeidsfordeling</p></span>
